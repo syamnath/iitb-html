@@ -17,6 +17,7 @@ jQuery(function($) {'use strict',
    $(this).closest('.panel-heading').toggleClass('active');
   });
 
+                     
 /***********************************************************************
 *******fix the top bar on scroll*/
   $(window).on("load resize scroll", function () {
@@ -51,6 +52,14 @@ jQuery(function($) {'use strict',
   $('#main-slider .slider-item img').cloneheight("#main-slider .slider-item");
 
 
+/***********************************************************************
+*******Trigger the quiz manualy on scroll*/
+$(document).on('scroll', function() {
+    if( $(this).scrollTop() >= 800 ) {
+        $(document).off('scroll');
+        $('#launchquiz').modal('show');
+    }
+});
 /***********************************************************************
 *******Dyanmically distribute height for the slider*/
   $(window).on("load resize", function () {
@@ -94,6 +103,16 @@ $(".quotes-by-sardar").slick({
     arrows: false,
     touchMove: true,
     dots: true
+});
+/***********************************************************************
+*******Added the exibition slider home page to show the lists of excibition*/ 
+$(".sliderexcibition").slick({
+   slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: false,
+    touchMove: true,
+    dots: false,
+  autoplay: true
 });
 /***********************************************************************
 *******Added the slider home page to show the quotes of Sardar Patel*/ 
