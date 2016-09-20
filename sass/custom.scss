@@ -39,6 +39,21 @@ Customization styles for Responsive banner*/
 /******************************************************
 Customization styles for the missing pages in the html*/
 
+/******************************************************/
+#timeline {
+  h4 {
+    font-weight: bold;
+  }
+  .btn {
+    max-width: 146px;
+    margin: auto;
+    display: block;
+  }
+}
+
+/******************************************************
+Customization styles for the missing pages in the html*/
+
 /******************************************************
 Excibition page*/
 .exibition_slider {
@@ -516,8 +531,8 @@ Main components
   top: 0;
   left: 18px;
   height: 100%;
-  width: 4px;
-  background: #d7e4ed;
+  width: 3px;
+  border-right: 2px dotted #d7e4ed;
 }
 @media only screen and (min-width: 1170px) {
   #cd-timeline {
@@ -559,15 +574,25 @@ Main components
 
 .cd-timeline-img {
   position: absolute;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  transform: rotate(43deg);
   left: 8px;
-  top: 11px;
+  top: 13px;
+  @include breakpoint(md){
+    left: 3px;
+  }
+  @include breakpoint(mobile){
+    left: 4px;
+  }
   i {
-    margin-left: 7px;
-    margin-top: 5px;
+    margin-left: 9px;
+    margin-top: 8px;
     color: #fff;
+    transform: rotate(-43deg);
+    :before {
+    font-size: 2em;
+    }
   }
 }
 .cd-timeline-img img {
@@ -591,12 +616,10 @@ Main components
 }
 @media only screen and (min-width: 1170px) {
   .cd-timeline-img {
-    width: 24px;
-    height: 24px;
-    left: 51.5%;
+    width: 34px;
+    height: 34px;
+    left: 51.3%;
     margin-left: -30px;
-    /* Force Hardware Acceleration in WebKit */
-    -webkit-transform: translateZ(0);
     -webkit-backface-visibility: hidden;
   }
   .cssanimations .cd-timeline-img.is-hidden {
@@ -711,7 +734,7 @@ Main components
 .cd-timeline-content::before {
   content: '';
   position: absolute;
-  top: 16px;
+  top: 23px;
   right: 100%;
   height: 0;
   width: 0;
@@ -743,6 +766,25 @@ Main components
     border-color: transparent;
     border-left-color: #ddd;
   }
+  .cd-timeline-block:nth-child(odd) .cd-timeline-content::after {
+    content: "";
+    width: 28px;
+    height: 2px;
+    border-bottom: 2px dotted #d7e4ed;
+    position: absolute;
+    right: -35px;
+    top: 29px;
+  }
+  
+  .cd-timeline-block:nth-child(even) .cd-timeline-content::after {
+    content: "";
+    width: 28px;
+    height: 2px;
+    border-bottom: 2px dotted #d7e4ed;
+    position: absolute;
+    left: -35px;
+    top: 29px;
+  }
   .cd-timeline-content .cd-read-more {
     float: left;
   }
@@ -768,8 +810,15 @@ Main components
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date {
     left: auto;
-    right: 122%;
+    right: 108%;
     text-align: right;
+    top: -40px;
+  }
+  .cd-timeline-block:nth-child(odd) .cd-timeline-content .cd-date {
+      right: -14%;
+  left: auto;
+  text-align: right;
+  top: -40px;
   }
   .cssanimations .cd-timeline-content.is-hidden {
     visibility: hidden;
@@ -1027,7 +1076,7 @@ Mobile styles for the biography*/
   &:before {
     display: block;
     content: "";
-      background: rgba(0, 0, 0, 0.43);
+      background: rgba(0, 0, 0, 0.6);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -1046,6 +1095,24 @@ Mobile styles for the biography*/
       z-index: 999;
       max-width: 300px;
       margin: auto;
+      @include breakpoint(mobile) {
+        top: inherit;
+        left: inherit;
+        right: inherit;
+        z-index: inherit;
+        max-width: inherit;
+        margin: auto;
+        position: relative;
+      }
+      h2 {
+        background: #000;
+        padding-top: 5px;
+        color: #fff;
+        @include breakpoint(mobile) {
+          background: transparent;
+          color: #353740;
+        }
+      }
     }
   }
 /******************************************************
@@ -1100,15 +1167,15 @@ styles for the search form in the home page*/
 
 #feature {
   h2 {
-    color: #2980B9;
+    color: #ebebeb;
   }
   a.btn-primary {
     max-width: 175px;
     display: block;
     margin: auto;
     background: transparent;
-    border: 1px solid rgb(101, 101, 102);;
-    color: rgb(41, 128, 185);
+    border: 1px solid #fff;
+    color: #fff;
   }
   
 }
@@ -1137,11 +1204,11 @@ styles for the search form in the home page*/
     user-select: none;
     padding: 8px 20px;
     background: transparent;
-    color: #E67E22;
+    color: #e67e22;
     border: none;
     margin-top: 10px;
     margin: auto;
-    border: 1px solid #E67E22;
+    border: 1px solid #e67e22;
     max-width: 190px;
   }
   
@@ -1158,7 +1225,6 @@ Mobile styles for the header*/
       margin-left: 0;
       a {
         background: transparent;
-        border-bottom: 1px solid  rgba(34, 78, 53, 0.52);;
         display: inherit;
         margin-right: 15px;
       }
@@ -1189,6 +1255,9 @@ Mobile styles for the header*/
     }
   }
   
+  .navbar-inverse .navbar-toggle, .navbar-toggle {
+    background: #333;
+  }
   
   
   

@@ -112,7 +112,35 @@ $(".sliderexcibition").slick({
     arrows: false,
     touchMove: true,
     dots: false,
-  autoplay: true
+    autoplay: true,
+  responsive: [
+      {
+        breakpoint: 1900,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: false,
+          dots: false
+        }
+      },{
+        breakpoint: 980,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: false,
+          dots: false
+        }
+      },{
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: false,
+          dots: false
+        }
+      }
+    ]
+  
 });
 /***********************************************************************
 *******Added the slider home page to show the quotes of Sardar Patel*/ 
