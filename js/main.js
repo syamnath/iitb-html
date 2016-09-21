@@ -144,6 +144,16 @@ $(".sliderexcibition").slick({
   
 });
 /***********************************************************************
+*******Added the slider home page to show the quotes of Sardar Patel*/
+jQuery( document ).ready(function($) {
+  var vid = document.getElementById("vid");
+  console.log(vid);
+  function playVid() {
+    vid.play();
+  }
+  playVid();
+});
+/***********************************************************************
 *******Added the slider home page to show the quotes of Sardar Patel*/ 
 $(".quoteslider").slick({
    slidesToShow: 1,

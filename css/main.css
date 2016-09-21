@@ -237,10 +237,10 @@ ul.social-share li a:hover {
   color: #27AE60;
 }
 
-input.search-form{
+input.search-form {
   background: transparent;
   border: 0 none;
-  width: 160px;
+  width: 40px;
   padding: 0 10px;
   color: #7E7E7E;
   -webkit-transition: all 400ms;
@@ -248,6 +248,10 @@ input.search-form{
   -ms-transition: all 400ms;
   -o-transition: all 400ms;
   transition: all 400ms;
+}
+
+input.search-form:focus {
+  width: 100px;
 }
 
 input.search-form::-webkit-input-placeholder{
@@ -320,7 +324,7 @@ input.search-form:hover::-webkit-input-placeholder {
 }
 
 .navbar-inverse .navbar-nav .dropdown-menu {
-  background-color: rgba(0,0,0,.85);
+  background-color: rgba(241, 241, 241, 0.85);
   -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125);
   -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125);
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125);
@@ -339,14 +343,14 @@ input.search-form:hover::-webkit-input-placeholder {
 
 .navbar-inverse .navbar-nav .dropdown-menu > li > a {
   padding: 8px 15px;
-  color: #fff;
+  color: #66686F;
 }
 
 .navbar-inverse .navbar-nav .dropdown-menu > li:hover > a,
 .navbar-inverse .navbar-nav .dropdown-menu > li:focus > a,
 .navbar-inverse .navbar-nav .dropdown-menu > li.active > a {
-  background-color: #27AE60;
-  color: #fff;
+  background-color: #fff;
+  color: #66686F;
 }
 
 .navbar-inverse .navbar-nav .dropdown-menu > li:last-child > a {
