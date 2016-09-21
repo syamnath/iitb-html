@@ -103,11 +103,49 @@
       <h2>Search page</h2>
       <p class="lead">Pellentesque habitant morbi tristique senectus et netus et malesuada</p>
     </div>
-    <div class="widget search">
-      <form role="form">
-        <input type="text" class="form-control search_results" autocomplete="off" placeholder="Search Here">
-        <input type="button" value="Search Quote">
+    <div class="widget search row searchresult-form">
+     <form class="form-inline col-md-12">
+        <div class="form-group">
+          <div class="input-group">
+            <input type="text" class="form-control" id="inputId" placeholder="Search Quotes Timeline or Media">
+            <div class="input-group-addon"><button type="submit" class="btn btn-primary">Search</button></div>
+          </div>
+        </div>
       </form>
+      <div class="search-filter hidden">
+        <ul class="col-md-4">
+         <h2>Type</h2>
+          <li> 
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> Check me out
+            </label>
+          </div>
+       </li>
+        </ul>
+        <ul class="col-md-4">
+         <h2>Category</h2>
+          <li>
+            <div class="checkbox">
+            <label>
+              <input type="checkbox"> Check me out
+            </label>
+          </div>
+          </li>
+        </ul>
+        <ul class="col-md-4">
+         <h2>Media</h2>
+          <li>
+            <div class="checkbox">
+            <label>
+              <input type="checkbox"> Check me out
+            </label>
+          </div>
+          </li>
+        </ul>
+      </div>
+      <button class="triggersearchfilter"><i class="fa fa-filter" aria-hidden="true"></i> &nbsp;Show filters</button>
+       <div class="clearfix"></div>
     </div>
     <!--/.search-->
     <div class="quote">
@@ -343,8 +381,12 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery.prettyPhoto.js"></script>
   <script src="js/jquery.isotope.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+  <script src="js/slickQuiz-config.js"></script>
+  <script src="js/slickQuiz.js"></script>
   <script src="js/main.js"></script>
   <script src="js/wow.min.js"></script>
+  
 </body>
 
 </html>

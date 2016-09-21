@@ -2521,11 +2521,13 @@ shortcodes page css
 }
 
 #footer a {
-  color: #27AE60;
+  color: #8f96a7;
+  font-family: 'Crimson Text', serif;
+  font-size: 1.01111em;
 }
 
 #footer a:hover {
-  color: #D35400;
+  color: #e67e22;
 }
 
 #footer ul {

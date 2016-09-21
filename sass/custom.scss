@@ -960,7 +960,6 @@ Main components
 /******************************************************
 quotes by sardar homepag eblock*/
 .share-feedbackholder {
-  border-right: 1px solid rgb(255, 83, 13);
   display: flex;
   @include breakpoint(mobile) {
     border: 0;
@@ -978,6 +977,55 @@ quotes by sardar homepag eblock*/
     }
     textarea {
     height: 120px;
+    }
+    .btn {
+      margin-top: 0;
+    }
+  }
+}
+/******************************************************
+quotes by sardar homepag eblock*/
+.searchresult-form {
+  input[type="text"] {
+     padding: 18px;
+      border-radius: 4px;
+
+  }
+  .triggersearchfilter {
+    margin: auto;
+    max-width: 200px;
+    display: block;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: none;
+    border: 0;
+    padding: 4px 26px;
+    color: #999;
+    i {
+      color: #999;
+    }
+  }
+  .search-filter {
+    transition: all 0.5s ease;
+    ul {
+      list-style: none;
+      li {
+        display:table;
+   margin:auto;
+      }
+    }
+    h2 {
+      font-size: 1.2em;
+      text-align: center;
+    }
+  }
+  .input-group-addon {
+    border: 0;
+    background: transparent;
+    border-radius: 0;
+    padding: 0;
+    .btn {
+      margin-top: 0;
+      border-radius: 0px 4px 4px 0px;
     }
   }
 }
@@ -1025,7 +1073,9 @@ quotes by sardar homepag eblock*/
       font-size: 3em;
     }
     p {
-      font-size: 1.5em;
+      font-size: 1.3em;
+       font-family: 'Crimson Text', serif;
+      font-weight: 400;
     }
   }
   .slick-dots {
@@ -1144,6 +1194,21 @@ styles for the header*/
   border-bottom: 1px solid #C8C8C8;
 }
 
+.navbar-inverse .navbar-nav .dropdown-menu {
+  &:before {
+    content: '';
+    position: absolute;
+    top: -14px;
+    right: 100%;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom: 7px solid #ddd;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
 /******************************************************
 styles for the search form in the header*/
 
@@ -1234,6 +1299,10 @@ styles for the search form in the home page*/
     background: transparent;
     border: 1px solid #fff;
     color: #fff;
+    &:hover {
+      color: #D35400;
+      border-color: #D35400;
+    }
   }
   
 }
@@ -1268,6 +1337,10 @@ styles for the search form in the home page*/
     margin: auto;
     border: 1px solid #e67e22;
     max-width: 190px;
+    &:hover {
+     color: #D35400;
+      border-color: #D35400;
+    }
   }
   
 }
