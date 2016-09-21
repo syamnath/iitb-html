@@ -102,7 +102,8 @@ $(".quotes-by-sardar").slick({
     slidesToScroll: 1,
     arrows: false,
     touchMove: true,
-    dots: true
+    dots: true,
+    autoplay: true
 });
 /***********************************************************************
 *******Added the exibition slider home page to show the lists of excibition*/ 
