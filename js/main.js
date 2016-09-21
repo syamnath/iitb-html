@@ -144,7 +144,11 @@ $(".sliderexcibition").slick({
   
 });
 /***********************************************************************
-*******Added the slider home page to show the quotes of Sardar Patel*/
+*******Auto play the home page video*/
+$('.search-results-tab .col-md-4:nth-child(3n+3)').after('<div class="clearfix"></div>');
+
+/***********************************************************************
+*******Auto play the home page video*/
 jQuery( document ).ready(function($) {
   var vid = document.getElementById("vid");
   function playVid() {
@@ -155,7 +159,7 @@ jQuery( document ).ready(function($) {
 /***********************************************************************
 *******Added the slider home page to show the quotes of Sardar Patel*/ 
   $(".triggersearchfilter").click(function(){
-    $(this).siblings('.search-filter').toggleClass('hidden show')
+    $(this).siblings('.search-filter').toggleClass('hidden show', 1000)
     if ($('.search-filter').hasClass('show')) {
       $(this).html("<i class='fa fa-times-circle'></i> &nbsp; Close Filters");
     } else {

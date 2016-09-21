@@ -380,6 +380,23 @@ General styles for the prev next for the Quote listing page*/
     }
   }
 }
+
+p.quote-item {
+        &:after {
+          content: "\f10e";
+          font-family: FontAwesome;
+          margin-left: 5px;
+          display: inline;
+          color: #888;
+        }
+        &:before {
+          content: "\f10d";
+          font-family: FontAwesome;
+          margin-right: 5px;
+          display: inline;
+          color: #888;
+        }
+    }
 /******************************************************
 General styles for the prev next for the slick slider*/
 .slick-slider {
@@ -983,13 +1000,78 @@ quotes by sardar homepag eblock*/
     }
   }
 }
+
+/******************************************************
+Search result tabs block*/
+.search-results-tab{
+  .search-result-nav {
+      background: #f7f7f7;
+      padding-top: 50px;
+      border-radius: 8px 8px 0px 0;
+    margin-bottom: 20px;
+    .nav-tabs {
+      display: table;
+      margin: auto;
+      border-right: 0;
+      li {
+        width: 205px;
+        text-align: center;
+      }
+    }
+  }
+  .tab-content  {
+    padding: 0;
+    margin-top: 20px;
+    .item-wrapper{
+        border: 1px solid #ececec;
+        margin-bottom: 20px;
+      border-radius: 5px;
+      header.item-header {
+        min-height: 35px;
+        background: #ececec;
+        padding: 7px 10px 0;
+      }
+      section.item-body {
+        margin-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        img {
+          margin-bottom: 10px;
+        }
+      }
+      footer.item-footer {
+        min-height: 45px;
+        background: #ececec;
+        padding: 7px 10px 8px;
+        .nav-foo {
+          margin-bottom: 0;
+          padding-left: 0;
+          li {
+            list-style: none;
+            display: inline-block;
+            a {
+              display: inline-block;
+              padding: 3px 8px;
+              background: #fff;
+              border-radius: 4px;
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
 /******************************************************
 quotes by sardar homepag eblock*/
+
 .searchresult-form {
   input[type="text"] {
      padding: 18px;
       border-radius: 4px;
-
   }
   .triggersearchfilter {
     margin: auto;
@@ -1005,7 +1087,8 @@ quotes by sardar homepag eblock*/
     }
   }
   .search-filter {
-    transition: all 0.5s ease;
+    transition: all 2s ease;
+    height: 100px;
     ul {
       list-style: none;
       li {
