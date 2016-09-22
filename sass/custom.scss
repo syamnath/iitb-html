@@ -1300,10 +1300,12 @@ styles for the search form in the header*/
   border-radius: 4px;
   margin-left: 20px;
   @include breakpoint(mobile){
+    display: none;
   }
   input.search-form {
     margin-left: 0;
     padding: 5px 15px;
+    display: none;
     display: none;
   }
   i {
@@ -1378,6 +1380,16 @@ styles for the search form in the home page*/
   position: absolute;
   top: 6px;
   right: 67px;
+  display: block;
+  @include breakpoint(lg) {
+    display: none;
+  } 
+  @include breakpoint(md) {
+    display: none;
+  }
+  @include breakpoint(sm) {
+    display: none;
+  }
 }
 
 #feature {

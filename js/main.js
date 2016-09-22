@@ -35,7 +35,7 @@ jQuery(function($) {'use strict',
   $(window).on("load resize ", function () {
     if ($(window).width() < 768) {
         
-     $('#header .search').toggleClass('responsive-search')
+    /* $('#header .search').toggleClass('responsive-search')*/
     };
   });
 
