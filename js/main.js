@@ -30,6 +30,14 @@ jQuery(function($) {'use strict',
         }
     };
   });
+/***********************************************************************
+*******fix search show on the responsive*/
+  $(window).on("load resize ", function () {
+    if ($(window).width() < 768) {
+        
+     $('#header .search').toggleClass('responsive-search')
+    };
+  });
 
 /***********************************************************************
 *******Initialize search i toggle header */

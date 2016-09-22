@@ -1303,6 +1303,8 @@ styles for the search form in the header*/
   }
   input.search-form {
     margin-left: 0;
+    padding: 5px 15px;
+    display: none;
   }
   i {
     cursor: pointer;
@@ -1365,12 +1367,19 @@ styles for the header user profile image block*/
 styles for the search form in the home page*/
 
 #header .search.active {
-  background: #efe;
+  background: #ececec;
   input[type="text"] {
     width: 100px;
     display: inline-block;
   }
 }
+
+#header .search.responsive-search {
+  position: absolute;
+  top: 6px;
+  right: 67px;
+}
+
 #feature {
   h2 {
     color: #ebebeb;
