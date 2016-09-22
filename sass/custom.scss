@@ -1297,19 +1297,17 @@ styles for the search form in the header*/
 
 #header .search {
   margin-top: 17px;
-  border: 1px solid #7E7E7E;
   border-radius: 4px;
   margin-left: 20px;
   @include breakpoint(mobile){
-    display: none;
   }
   input.search-form {
     margin-left: 0;
   }
   i {
-//    display: none;
+    cursor: pointer;
     color: #7E7E7E;
-    margin-right: 3px;
+    margin-right: 8px;
   }
 }
 
@@ -1366,6 +1364,13 @@ styles for the header user profile image block*/
 /******************************************************
 styles for the search form in the home page*/
 
+#header .search.active {
+  background: #efe;
+  input[type="text"] {
+    width: 100px;
+    display: inline-block;
+  }
+}
 #feature {
   h2 {
     color: #ebebeb;
@@ -1450,7 +1455,6 @@ Mobile styles for the header*/
       margin-left: 0;
       a {
         background: transparent;
-        border-bottom: 1px solid  rgba(34, 78, 53, 0.52);;
         display: inherit;
         margin-right: 15px;
       }

@@ -32,6 +32,11 @@ jQuery(function($) {'use strict',
   });
 
 /***********************************************************************
+*******Initialize search i toggle header */
+  $('#header .search i').click(function(){
+    $(this).closest('.search').toggleClass('active');
+  });
+/***********************************************************************
 *******Initialize slick clone height to */
  
    $.fn.cloneheight = function ( addheightto ) {

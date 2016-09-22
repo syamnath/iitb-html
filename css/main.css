@@ -240,8 +240,8 @@ ul.social-share li a:hover {
 input.search-form {
   background: transparent;
   border: 0 none;
-  width: 40px;
-  padding: 0 10px;
+  width: 10px;
+  padding: 5px 15px;
   color: #7E7E7E;
   -webkit-transition: all 400ms;
   -moz-transition: all 400ms;
@@ -250,9 +250,9 @@ input.search-form {
   transition: all 400ms;
 }
 
-input.search-form:focus {
+/*input.search-form:focus {
   width: 100px;
-}
+}*/
 
 input.search-form::-webkit-input-placeholder{
   color: #777;
