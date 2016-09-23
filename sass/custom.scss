@@ -1251,6 +1251,31 @@ quotes by sardar homepag eblock*/
 }
 
 /******************************************************
+login form eblock*/
+#block-eminent-sardar-local-tasks {
+  margin-bottom: 20px;
+  ul {
+    padding-left: 0;
+    list-style: none;
+    li {
+      display: inline-block;
+      padding: 10px;
+      background: #e67e22;
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
+form {
+  label {
+    min-width: 128px;
+  }
+  .form-item {
+    margin-bottom: 20px;
+  }
+}
+/******************************************************
 quotes by sardar homepag eblock*/
 .quotes-by-sardar-holder {
   position: relative;
