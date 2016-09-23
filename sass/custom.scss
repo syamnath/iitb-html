@@ -29,6 +29,11 @@ Media Query mixins*/
   
 }
 
+video {
+  width: 100%    !important;
+  height: auto   !important;
+}
+
 /******************************************************
 Customization styles for Responsive banner*/
 .carousel-inner>.item>img, .carousel-inner>.item>a>img {
@@ -68,7 +73,6 @@ Excibition page*/
 #excibitionVideo {
   width: 100%;
   height: 369px;
-  object-fit: cover;
 }
 
 .pdf-holder-ex {
