@@ -1157,6 +1157,9 @@ quotes by sardar homepag eblock*/
   }
   .search-filter {
     transition: all 2s ease;
+    input[type="checkbox"] {
+      margin-right: 10px;
+    }
     ul {
       list-style: none;
       padding-left: 0;
@@ -1210,12 +1213,16 @@ quotes by sardar homepag eblock*/
     }
   }
 }
-#views-exposed-form-eminent-search-page-1 {
+#block-exposedformeminent-searchpage-1-6 {
   height: 60px;
   @include breakpoint(xxxs) {
     height: auto;
   }
+  input[type="checkbox"] {
+    margin-right: 15px;
+  }
   i.fa-search {
+    border: 1px solid red;
     display: none;
   }
   input[type="text"] {
