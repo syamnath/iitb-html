@@ -2199,6 +2199,7 @@ ul.pagination > li > a {
   font-size: 13px;
   padding: 5px 14px;
   color: #e67e22;
+  margin-bottom: 10px;
 }
 
 ul.pagination > li > a i{

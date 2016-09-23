@@ -67,6 +67,7 @@ Excibition page*/
 }
 #excibitionVideo {
   width: 100%;
+  height: 369px;
 }
 
 .pdf-holder-ex {
@@ -1019,13 +1020,55 @@ Search result tabs block*/
       padding-top: 50px;
       border-radius: 8px 8px 0px 0;
     margin-bottom: 20px;
+    @include breakpoint(sm) {
+      border-radius: 0;
+      padding-top: 0;
+    }
+    @include breakpoint(xs) {
+      border-radius: 0;
+      padding-top: 0;
+    }
+    @include breakpoint(xxs) {
+      border-radius: 0;
+      padding-top: 0;
+    }
+    @include breakpoint(xxxs) {
+      border-radius: 0;
+      padding-top: 0;
+    }
     .nav-tabs {
       display: table;
       margin: auto;
       border-right: 0;
+      @include breakpoint(sm) {
+          display: block;
+        }
+      @include breakpoint(xs) {
+          display: block;
+        }@include breakpoint(xs) {
+          display: block;
+        }
+      @include breakpoint(xxs) {
+          display: block;
+        }
+      @include breakpoint(xxxs) {
+          display: block;
+        }
       li {
         width: 205px;
         text-align: center;
+        @include breakpoint(sm) {
+          width: 50%;
+        }
+        @include breakpoint(xs) {
+          width: 50%;
+        }
+        @include breakpoint(xxs) {
+          width: 50%;
+        }
+        @include breakpoint(xxxs) {
+          width: 100%;
+        }
       }
     }
   }
@@ -1098,17 +1141,46 @@ quotes by sardar homepag eblock*/
   }
   .search-filter {
     transition: all 2s ease;
-    height: 100px;
     ul {
       list-style: none;
+      padding-left: 0;
+      display:table;
+      margin:auto;
+      @include breakpoint(sm) {
+        display: flex;
+        width: 100%;
+      }
+      @include breakpoint(xs) {
+        display: flex;
+        width: 100%;
+      }
+      @include breakpoint(xxs) {
+        display: flex;
+        width: 100%;
+      }
+      @include breakpoint(xxxs) {
+        display: block;
+        width: 100%;
+      }
       li {
-        display:table;
-   margin:auto;
+        padding-right: 10px;
       }
     }
     h2 {
       font-size: 1.2em;
       text-align: center;
+      @include breakpoint(sm) {
+        text-align: left;
+      }
+      @include breakpoint(xs) {
+        text-align: left;
+      }
+      @include breakpoint(xxs) {
+        text-align: left;
+      }
+      @include breakpoint(xxxs) {
+        text-align: left;
+      }
     }
   }
   .input-group-addon {
@@ -1122,6 +1194,39 @@ quotes by sardar homepag eblock*/
     }
   }
 }
+#views-exposed-form-eminent-search-page-1 {
+  height: 60px;
+  @include breakpoint(xxxs) {
+    height: auto;
+  }
+  i.fa-search {
+    display: none;
+  }
+  input[type="text"] {
+    width: 80%;
+    display: inline;
+      float: left;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px 0px 0px 5px;
+      @include breakpoint(xxxs) {
+        float: none;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+  }
+  .btn {
+    display: inline;
+    width: 100%;
+    float: right;
+    height: 60px;
+    @include breakpoint(xxxs) {
+      float: none;
+      height: auto;
+      margin-bottom: 20px;
+      }
+  }
+}
+
 /******************************************************
 quotes by sardar homepag eblock*/
 .quotes-by-sardar-holder {
