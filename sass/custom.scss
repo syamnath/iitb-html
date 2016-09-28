@@ -285,10 +285,7 @@ General styles for the Banner image home page*/
   border: 1px solid red;
   @include breakpoint(mobile){
     margin-top: 0;
-  }
-  .slidercontent {
-    margin-top: 6em;
-  }
+  } 
   video {
     height: auto;
     width: 100%;
