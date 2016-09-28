@@ -282,7 +282,6 @@ General styles for the branding */
 General styles for the Banner image home page*/
 #main-slider {
   position: relative;
-  border: 1px solid red;
   @include breakpoint(mobile){
     margin-top: 0;
   } 
