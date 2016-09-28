@@ -593,13 +593,13 @@ input.search-form:hover::-webkit-input-placeholder {
 }
 
 
-#recent-works .col-xs-12.col-sm-4.col-md-2{
+#recent-works .col-xs-12.col-sm-4.col-md-2, #recent-works  {
   padding: 0;
 }
 
 #recent-works{
-    padding-bottom: 70px;
-  background: rgb(235, 235, 235);
+  /* padding-bottom: 70px; */
+  background: #fff;
 }
 
 .recent-work-wrap {

@@ -576,12 +576,13 @@ Main components
   left: 18px;
   height: 100%;
   width: 3px;
-  border-right: 2px dotted #d7e4ed;
+  border-right: 3px dotted #353740;
 }
 @media only screen and (min-width: 1170px) {
   #cd-timeline {
     margin-top: 3em;
     margin-bottom: 3em;
+    width: 85%;
   }
   #cd-timeline::before {
     left: 50%;
@@ -812,22 +813,22 @@ Main components
   }
   .cd-timeline-block:nth-child(odd) .cd-timeline-content::after {
     content: "";
-    width: 28px;
+    width: 22px;
     height: 2px;
-    border-bottom: 2px dotted #d7e4ed;
+    border-bottom: 3px dotted #d7e4ed;
     position: absolute;
-    right: -35px;
+    right: -25px;
     top: 29px;
   }
   
   .cd-timeline-block:nth-child(even) .cd-timeline-content::after {
-    content: "";
-    width: 28px;
-    height: 2px;
-    border-bottom: 2px dotted #d7e4ed;
-    position: absolute;
-    left: -35px;
-    top: 29px;
+  content: "";
+  width: 20px;
+  height: 2px;
+  border-bottom: 3px dotted #d7e4ed;
+  position: absolute;
+  left: -28px;
+  top: 29px;
   }
   .cd-timeline-content .cd-read-more {
     float: left;
