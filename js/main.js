@@ -55,7 +55,6 @@ $(window).on("load resize scroll", function () {
   });
 /***********************************************************************
 *******Initialize slick clone height to */
-
    $.fn.cloneheight = function ( addheightto ) {
     var $this = $(this);
     $this.each(function() {
@@ -172,7 +171,7 @@ $('.search-results-tab .col-md-4:nth-child(3n+3)').after('<div class="clearfix">
 
 /***********************************************************************
 *******Auto play the home page video*/
-jQuery( document ).ready(function($) {
+/*jQuery( document ).ready(function($) {
   $('#header .navbar-right .views-exposed-form').addClass('search');
   $('#header .navbar-right .views-exposed-form form').attr('role', 'form');
   if ($('#vid').length > 0) {
@@ -182,7 +181,7 @@ jQuery( document ).ready(function($) {
     }
     playVid();
   }
-});
+});*/
 /***********************************************************************
 *******Added the slider home page to show the quotes of Sardar Patel*/
   $(".triggersearchfilter").click(function(){
@@ -203,12 +202,12 @@ $(".quoteslider").slick({
 });
 
 
-$("#main-slider").slick({
+/*$("#main-slider").slick({
    slidesToShow: 1,
     slidesToScroll: 0,
     arrows: false,
     touchMove: false
-});
+});*/
 
 /***********************************************************************
 *******Added the slider in the exibition page with  content over slider*/

@@ -282,8 +282,12 @@ General styles for the branding */
 General styles for the Banner image home page*/
 #main-slider {
   position: relative;
+  border: 1px solid red;
   @include breakpoint(mobile){
     margin-top: 0;
+  }
+  .slidercontent {
+    margin-top: 6em;
   }
   video {
     height: auto;
@@ -320,7 +324,6 @@ General styles for the Banner image home page*/
   }
   .slider-item {
     position: relative;
-    display: flex;
     align-items: center;
     @include breakpoint(mobile){ 
       display: block;
