@@ -31,6 +31,15 @@ jQuery(function($) {'use strict',
     };
   });
 /***********************************************************************
+******* send the header aboe the slider in homepage*/
+$(window).on("load resize scroll", function () {
+    if ($(window).width() > 768) {
+        var navbarHeight = $('header#header').height();
+        $('#main-slider').css('margin-top', '-' + navbarHeight + 'px');
+    };
+  });
+
+/***********************************************************************
 *******fix search show on the responsive*/
   $(window).on("load resize ", function () {
     if ($(window).width() < 768) {
@@ -50,7 +59,6 @@ jQuery(function($) {'use strict',
    $.fn.cloneheight = function ( addheightto ) {
     var $this = $(this);
     $this.each(function() {
-      console.log($this);
       $(window).on("load resize", function () {
          if ($(window).width() > 973) {
           var height = $this.height();
