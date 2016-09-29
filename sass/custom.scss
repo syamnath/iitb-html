@@ -517,6 +517,46 @@ General styles for the Media page*/
     }
   }
 }
+.meidiablock {
+  .media-preview, .media-preview-description {
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    margin-bottom: 70px;
+    @include breakpoint(mobile) {
+      margin-bottom: 20px;
+    }
+  }
+  .media-preview {
+    .audio {
+      margin-left: auto;
+      margin-right: auto;
+      width: 302px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 45%;
+      @include breakpoint(mobile) {
+        top: 10%;
+      }
+        }
+    &.audio_hold {
+      @include breakpoint(mobile) {
+        height: 40px;
+      }
+    }
+  }
+  .media_details_hold {
+    .item {
+      border: 1px solid #bdc3c7;
+      padding: 10px;
+      margin-bottom: 20px;
+      .thumbnail {
+          padding: 0;
+          border: 0;
+      }
+    }
+  }
+}
 
 /******************************************************
 General styles for the Quaote listinng*/
