@@ -321,6 +321,8 @@ General styles for the Banner image home page*/
   .slider-item {
     position: relative;
     align-items: center;
+     -webkit-transition: width 2s; /* Safari */
+    transition: width 2s; 
     @include breakpoint(mobile){ 
       display: block;
     }
@@ -349,9 +351,26 @@ General styles for the Banner image home page*/
       h1 {
         text-transform: uppercase;
         color: #000;
-        font-size: 6em;
+        font-size: 2.6em;
+        span {
+          font-size: 2.6em;
+          color: #e67e22;
+        }
+        @include breakpoint(md){
+            font-size: 1.9em;
+        span {
+            font-size: 1.9em;
+            color: #e67e22;
+          }
+        }
         @include breakpoint(mobile){
-          font-size: 3em;
+          text-transform: uppercase;
+        color: #000;
+        font-size: 1.6em;
+        span {
+          font-size: 2em;
+          color: #e67e22;
+        }
         }
       }
       h2 {
@@ -1431,12 +1450,12 @@ Mobile styles for the header slider*/
 /******************************************************
 styles for the header*/
 #header {
-  /* position: absolute;
+  position: absolute;
   right: 0;
   top: 0;
   left: 0;
   margin-left: auto;
-  margin-right: auto */;
+  margin-right: auto ;
   @include breakpoint(mobile){
     background: #fff;
   }
