@@ -141,7 +141,7 @@ $(".sliderexcibition").slick({
           slidesToShow: 4,
           slidesToScroll: 1,
           infinite: false,
-          dots: false
+          dots: true
         }
       },{
         breakpoint: 980,
@@ -149,7 +149,7 @@ $(".sliderexcibition").slick({
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: false,
-          dots: false
+          dots: true
         }
       },{
         breakpoint: 400,
@@ -157,7 +157,7 @@ $(".sliderexcibition").slick({
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: false,
-          dots: false
+          dots: true
         }
       }
     ]

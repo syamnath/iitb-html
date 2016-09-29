@@ -1380,6 +1380,9 @@ helper styles*/
 /******************************************************
 Mobile styles for the Recent works blocks*/
 #recent-works {
+  @include breakpoint(mobile) {
+    padding-top: 50px;
+  }
   .col-md-3 {
    padding-left: 0;
     padding-right: 0;
@@ -1432,6 +1435,31 @@ Mobile styles for the biography*/
         }
       }
     }
+    ul.slick-dots {
+      text-align: center;
+      padding-left: 0;
+      margin-top: 20px;
+        li {
+          &.slick-active {
+            button {
+              background: #616161;
+            }
+          }
+          display: inline-block;
+            list-style: none;
+            margin-right: 10px;
+          button {
+            display: block;
+            width: 15px;
+            height: 15px;
+            border-radius: 25px;
+            background: #949494;
+            border: 0;
+            font-size: 0;
+
+          }
+        }
+    }
   }
 /******************************************************
 Mobile styles for the header slider*/
@@ -1458,6 +1486,7 @@ styles for the header*/
   margin-right: auto ;
   @include breakpoint(mobile){
     background: #fff;
+    position: relative;
   }
 }
 .navbar-fixed-top {
