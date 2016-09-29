@@ -1322,6 +1322,14 @@ quotes by sardar homepag eblock*/
     margin: auto;
     bottom: 40px;
   }
+  h2 {
+      position: absolute;
+  top: 150px;
+  left: 47px;
+  margin: auto;
+  font-size: 3em;
+  color: #fff;
+  }
 }
 .quotes-by-sardar {
   position: relative;
@@ -1333,6 +1341,9 @@ quotes by sardar homepag eblock*/
       color: #fff;
       padding-right: 35px;
       padding-left: 35px;
+      &:before, &:after {
+        color: #fff;
+      }
     }
     h2 {
       font-size: 3em;
