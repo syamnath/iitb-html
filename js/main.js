@@ -30,14 +30,7 @@ jQuery(function($) {'use strict',
         }
     };
   });
-/***********************************************************************
-******* send the header aboe the slider in homepage*/
-$(window).on("load resize scroll", function () {
-    if ($(window).width() > 768) {
-        var navbarHeight = $('header#header').height();
-        $('#main-slider').css('margin-top', '-' + navbarHeight + 'px');
-    };
-  });
+
 
 /***********************************************************************
 *******fix search show on the responsive*/
@@ -59,12 +52,14 @@ $(window).on("load resize scroll", function () {
     var $this = $(this);
     $this.each(function() {
       $(window).on("load resize", function () {
+        $this.imagesLoaded( function() {
          if ($(window).width() > 973) {
           var height = $this.height();
           var container = addheightto;
            $(this).css('position','relative');
          $(container).css("height", height + "px");
          }
+         });
       });
     });
   };
@@ -266,18 +261,30 @@ $.fn.VerticalCenter = function(container) {
     var $this = $(this)
     $(window).on("load resize ", function () {
       if ($(window).width() > 973) {
+        $('.slider-item img').imagesLoaded( function() {
       var element = $this;
       var containerel = $(container)
       var elementHeight = $(element).height();
       var containerHeight = $(container).height();
       var marginTop =  (containerHeight - elementHeight) / 2;
-      console.log($this.css('border', marginTop + 'px'))
       $this.css('margin-top', marginTop + 'px');
+    });
     }
   });
 };
 
 $('.slidercontent').VerticalCenter('.slider-item img');
+
+
+/***********************************************************************
+******* send the header aboe the slider in homepage*/
+/*$(window).on("load resize scroll", function () {
+    if ($(window).width() > 768) {
+        var navbarHeight = $('header#header').height();
+        $('#main-slider').css('margin-top', '-' + navbarHeight + 'px');
+    };
+  });*/
+
 
 
 
