@@ -114,6 +114,9 @@ $('#main-slider').centercontent()*/
 *******Initialize slick quiz for the quiz block in the home page*/
 if ($('#slickQuiz').length > 0) {
   $('#slickQuiz').slickQuiz();
+  $('.startQuiz').click(function(){
+    $('.quizHeader, .quizName').hide();
+  });
 }
 /***********************************************************************
 *******Added the slider home page to show the quotes of Sardar Patel*/

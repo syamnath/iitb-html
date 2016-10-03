@@ -96,10 +96,17 @@ Excibition page*/
 General styles bootstrap modal*/
 .modal-header {
   border: 0;
+  background: rgb(230, 126, 34);
+  text-align: center;
+  color: #fff;
+}
+.modal-content {
+  border-radius:0;
+
 }
 
 .close {
-  color: #D35400;
+  color: #000;
   opacity: 1;
 }
 
@@ -192,25 +199,37 @@ General styles for the Quiz block in the home page*/
   }
   a.startQuiz {
     padding: 8px 20px;
-    background: #27AE60;
+    background: rgb(230, 126, 34);
+    margin: auto;
     color: #fff;
-    border-radius: 4px;
     border: none;
     margin-top: 10px;
+    display: table !important;
     &:hover {
       background: #D35400;
       outline: none;
       box-shadow: none;
     }
   }
+  h3 {
+    color: #353740;
+    text-align: center;
+    font-weight: bold;
+  }
+  .questionCount {
+    text-align: center;
+  }
   
   a.button {
     padding: 8px 20px;
     background: #27AE60;
     color: #fff;
-    border-radius: 4px;
     border: none;
     margin-top: 10px;
+    display: table;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
     &:hover {
       background: #D35400;
       outline: none;
