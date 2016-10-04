@@ -1726,8 +1726,10 @@ styles for the search form in the header*/
   margin-top: 17px;
   border-radius: 4px;
   margin-left: 20px;
+  form {
+    border: 1px solid #d6d6d6;
+  }
   @include breakpoint(mobile){
-    border: 1px solid #dadada;
     margin-left: 0;
     margin-top: 0;
   }
