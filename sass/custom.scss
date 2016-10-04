@@ -751,7 +751,7 @@ Main components
           }
         }
       &:before {
-          border-left-color: #873066 !important;
+          border-left-color: #873066;
           @include breakpoint(mobile) {
           border-right-color: #873066 !important;
           border-left-color: transparent;
