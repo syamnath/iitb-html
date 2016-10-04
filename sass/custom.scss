@@ -357,7 +357,9 @@ General styles for the Banner image home page*/
       left: 0;
       height: auto;
       @include breakpoint(mobile){
-        position: relative;
+        filter: invert(30%);
+          min-height: 307px;
+          width: auto;
       }
     }
     .content-holder {
@@ -681,6 +683,10 @@ Main components
       border-color: #27ae60;
       &:before {
           border-left-color: #27ae60;
+          @include breakpoint(mobile) {
+            border-right-color: #27ae60;
+            border-left-color: transparent;
+          }
       }
       &:after {
             border-bottom: 3px dotted #27ae60 !important;
@@ -735,6 +741,10 @@ Main components
         }
       &:before {
           border-left-color: #873066 !important;
+          @include breakpoint(mobile) {
+          border-right-color: #873066 !important;
+          border-left-color: transparent;
+          }
       }
       &:after {
             border-bottom: 3px dotted #873066 !important;
