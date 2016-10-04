@@ -2179,18 +2179,24 @@ styles for the search form in the home page*/
   border-color: #D35400;
 }
 
+/* line 1881, ../sass/custom.scss */
+.no-container-row {
+  margin-left: inherit;
+  margin-right: inherit;
+}
+
 /******************************************************
 Mobile styles for the header*/
 @media (max-width: 767px) and (min-width: 641px) {
-  /* line 1885, ../sass/custom.scss */
+  /* line 1890, ../sass/custom.scss */
   #header .navbar {
     padding-bottom: 15px;
   }
-  /* line 1888, ../sass/custom.scss */
+  /* line 1893, ../sass/custom.scss */
   #header .navbar .navbar-nav > li {
     margin-left: 0;
   }
-  /* line 1890, ../sass/custom.scss */
+  /* line 1895, ../sass/custom.scss */
   #header .navbar .navbar-nav > li a {
     background: transparent;
     display: inherit;
@@ -2198,15 +2204,15 @@ Mobile styles for the header*/
   }
 }
 @media (max-width: 640px) and (min-width: 481px) {
-  /* line 1885, ../sass/custom.scss */
+  /* line 1890, ../sass/custom.scss */
   #header .navbar {
     padding-bottom: 15px;
   }
-  /* line 1899, ../sass/custom.scss */
+  /* line 1904, ../sass/custom.scss */
   #header .navbar .navbar-nav > li {
     margin-left: 0;
   }
-  /* line 1901, ../sass/custom.scss */
+  /* line 1906, ../sass/custom.scss */
   #header .navbar .navbar-nav > li a {
     background: transparent;
     display: inherit;
@@ -2214,22 +2220,22 @@ Mobile styles for the header*/
   }
 }
 @media (max-width: 480px) {
-  /* line 1885, ../sass/custom.scss */
+  /* line 1890, ../sass/custom.scss */
   #header .navbar {
     padding-bottom: 15px;
   }
-  /* line 1910, ../sass/custom.scss */
+  /* line 1915, ../sass/custom.scss */
   #header .navbar .navbar-nav > li {
     margin-left: 0;
   }
-  /* line 1912, ../sass/custom.scss */
+  /* line 1917, ../sass/custom.scss */
   #header .navbar .navbar-nav > li a {
     background: transparent;
     display: inherit;
     margin-right: 15px;
   }
 }
-/* line 1920, ../sass/custom.scss */
+/* line 1925, ../sass/custom.scss */
 #header .navbar .navbar-inverse .navbar-toggle, #header .navbar .navbar-toggle {
   background: #333;
 }
