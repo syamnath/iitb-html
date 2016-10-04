@@ -989,6 +989,9 @@ Main components
   float: left;
   padding: .8em 0;
   opacity: .7;
+  @include breakpoint(mobile) {
+    float: right;
+  }
 }
 .cd-timeline-content::before {
   content: '';
