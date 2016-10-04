@@ -1736,6 +1736,10 @@ styles for the search form in the header*/
   input.search-form {
     margin-left: 0;
     padding: 5px 15px;
+    width: 86px;
+    @include breakpoint(mobile) {
+      width: 240px;
+    }
   }
   i {
     cursor: pointer;

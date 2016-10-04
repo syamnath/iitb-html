@@ -2021,8 +2021,15 @@ styles for the search form in the header*/
 #header .search input.search-form {
   margin-left: 0;
   padding: 5px 15px;
+  width: 86px;
 }
-/* line 1740, ../sass/custom.scss */
+@media (max-width: 973px) {
+  /* line 1736, ../sass/custom.scss */
+  #header .search input.search-form {
+    width: 240px;
+  }
+}
+/* line 1744, ../sass/custom.scss */
 #header .search i {
   cursor: pointer;
   color: #7E7E7E;
@@ -2031,35 +2038,35 @@ styles for the search form in the header*/
 
 /******************************************************
 styles for the header user profile image block*/
-/* line 1750, ../sass/custom.scss */
+/* line 1754, ../sass/custom.scss */
 .navbar-nav > li img {
   height: 25px;
   width: 25px;
   border-radius: 25px;
 }
-/* line 1755, ../sass/custom.scss */
+/* line 1759, ../sass/custom.scss */
 .navbar-nav > li i {
   margin-left: 6px;
   margin-top: 3px;
 }
 @media (max-width: 973px) {
-  /* line 1755, ../sass/custom.scss */
+  /* line 1759, ../sass/custom.scss */
   .navbar-nav > li i {
     margin-left: 0;
   }
 }
 
-/* line 1767, ../sass/custom.scss */
+/* line 1771, ../sass/custom.scss */
 .navbar-nav > li.dropdown a.user-profile-toggle {
   padding-left: 30px;
 }
 @media (max-width: 973px) {
-  /* line 1767, ../sass/custom.scss */
+  /* line 1771, ../sass/custom.scss */
   .navbar-nav > li.dropdown a.user-profile-toggle {
     padding-left: 44px;
   }
 }
-/* line 1772, ../sass/custom.scss */
+/* line 1776, ../sass/custom.scss */
 .navbar-nav > li.dropdown a.user-profile-toggle .user-image {
   display: inline-block;
   border: 1px solid #dadada;
@@ -2071,18 +2078,18 @@ styles for the header user profile image block*/
   left: 0;
 }
 @media (max-width: 973px) {
-  /* line 1772, ../sass/custom.scss */
+  /* line 1776, ../sass/custom.scss */
   .navbar-nav > li.dropdown a.user-profile-toggle .user-image {
     left: 12px;
   }
 }
 
 @media (max-width: 973px) {
-  /* line 1788, ../sass/custom.scss */
+  /* line 1792, ../sass/custom.scss */
   .navbar-inverse .navbar-nav .dropdown-menu {
     background-color: transparent;
   }
-  /* line 1791, ../sass/custom.scss */
+  /* line 1795, ../sass/custom.scss */
   .navbar-inverse .navbar-nav .dropdown-menu li {
     background: rgba(241, 241, 241, 0.85);
     margin-right: 15px;
@@ -2091,17 +2098,17 @@ styles for the header user profile image block*/
 
 /******************************************************
 styles for the search form in the home page*/
-/* line 1800, ../sass/custom.scss */
+/* line 1804, ../sass/custom.scss */
 #header .search.active {
   background: #ececec;
 }
-/* line 1802, ../sass/custom.scss */
+/* line 1806, ../sass/custom.scss */
 #header .search.active input[type="text"] {
   width: 100px;
   display: inline-block;
 }
 
-/* line 1808, ../sass/custom.scss */
+/* line 1812, ../sass/custom.scss */
 #header .search.responsive-search {
   position: absolute;
   top: 6px;
@@ -2109,33 +2116,33 @@ styles for the search form in the home page*/
   display: block;
 }
 @media (min-width: 1200px) {
-  /* line 1808, ../sass/custom.scss */
+  /* line 1812, ../sass/custom.scss */
   #header .search.responsive-search {
     display: none;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* line 1808, ../sass/custom.scss */
+  /* line 1812, ../sass/custom.scss */
   #header .search.responsive-search {
     display: none;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 1808, ../sass/custom.scss */
+  /* line 1812, ../sass/custom.scss */
   #header .search.responsive-search {
     display: none;
   }
 }
 
-/* line 1825, ../sass/custom.scss */
+/* line 1829, ../sass/custom.scss */
 #feature h2 {
   color: #ebebeb;
 }
-/* line 1829, ../sass/custom.scss */
+/* line 1833, ../sass/custom.scss */
 #feature .media h2 {
   color: #303e49;
 }
-/* line 1833, ../sass/custom.scss */
+/* line 1837, ../sass/custom.scss */
 #feature a.btn-primary {
   max-width: 175px;
   display: block;
@@ -2144,17 +2151,17 @@ styles for the search form in the home page*/
   border: 1px solid #fff;
   color: #fff;
 }
-/* line 1840, ../sass/custom.scss */
+/* line 1844, ../sass/custom.scss */
 #feature a.btn-primary:hover {
   color: #D35400;
   border-color: #D35400;
 }
 
-/* line 1849, ../sass/custom.scss */
+/* line 1853, ../sass/custom.scss */
 .recent-work-wrap .recent-work-inner p {
   text-align: center;
 }
-/* line 1852, ../sass/custom.scss */
+/* line 1856, ../sass/custom.scss */
 .recent-work-wrap .recent-work-inner a.preview {
   display: block;
   padding: 6px 12px;
@@ -2182,13 +2189,13 @@ styles for the search form in the home page*/
   border: 1px solid #e67e22;
   max-width: 190px;
 }
-/* line 1878, ../sass/custom.scss */
+/* line 1882, ../sass/custom.scss */
 .recent-work-wrap .recent-work-inner a.preview:hover {
   color: #D35400;
   border-color: #D35400;
 }
 
-/* line 1886, ../sass/custom.scss */
+/* line 1890, ../sass/custom.scss */
 .no-container-row {
   margin-left: inherit;
   margin-right: inherit;
@@ -2197,15 +2204,15 @@ styles for the search form in the home page*/
 /******************************************************
 Mobile styles for the header*/
 @media (max-width: 767px) and (min-width: 641px) {
-  /* line 1895, ../sass/custom.scss */
+  /* line 1899, ../sass/custom.scss */
   #header .navbar {
     padding-bottom: 15px;
   }
-  /* line 1898, ../sass/custom.scss */
+  /* line 1902, ../sass/custom.scss */
   #header .navbar .navbar-nav > li {
     margin-left: 0;
   }
-  /* line 1900, ../sass/custom.scss */
+  /* line 1904, ../sass/custom.scss */
   #header .navbar .navbar-nav > li a {
     background: transparent;
     display: inherit;
@@ -2213,15 +2220,15 @@ Mobile styles for the header*/
   }
 }
 @media (max-width: 640px) and (min-width: 481px) {
-  /* line 1895, ../sass/custom.scss */
+  /* line 1899, ../sass/custom.scss */
   #header .navbar {
     padding-bottom: 15px;
   }
-  /* line 1909, ../sass/custom.scss */
+  /* line 1913, ../sass/custom.scss */
   #header .navbar .navbar-nav > li {
     margin-left: 0;
   }
-  /* line 1911, ../sass/custom.scss */
+  /* line 1915, ../sass/custom.scss */
   #header .navbar .navbar-nav > li a {
     background: transparent;
     display: inherit;
@@ -2229,22 +2236,22 @@ Mobile styles for the header*/
   }
 }
 @media (max-width: 480px) {
-  /* line 1895, ../sass/custom.scss */
+  /* line 1899, ../sass/custom.scss */
   #header .navbar {
     padding-bottom: 15px;
   }
-  /* line 1920, ../sass/custom.scss */
+  /* line 1924, ../sass/custom.scss */
   #header .navbar .navbar-nav > li {
     margin-left: 0;
   }
-  /* line 1922, ../sass/custom.scss */
+  /* line 1926, ../sass/custom.scss */
   #header .navbar .navbar-nav > li a {
     background: transparent;
     display: inherit;
     margin-right: 15px;
   }
 }
-/* line 1930, ../sass/custom.scss */
+/* line 1934, ../sass/custom.scss */
 #header .navbar .navbar-inverse .navbar-toggle, #header .navbar .navbar-toggle {
   background: #333;
 }
