@@ -344,6 +344,10 @@ General styles for the Banner image home page*/
     transition: width 2s; 
     @include breakpoint(mobile){ 
       display: block;
+      background: url('../images/slider/crowd-united-india.jpg') center right no-repeat;
+      background-size: cover;
+      @include breakpoint(xxs) {
+      }
     }
     .content-holder {
       @include breakpoint(mobile){
@@ -357,9 +361,7 @@ General styles for the Banner image home page*/
       left: 0;
       height: auto;
       @include breakpoint(mobile){
-        filter: invert(30%);
-          min-height: 307px;
-          width: auto;
+          display: none;
       }
     }
     .content-holder {
