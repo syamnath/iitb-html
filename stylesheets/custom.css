@@ -2009,15 +2009,15 @@ styles for the search form in the header*/
 @media (max-width: 973px) {
   /* line 1725, ../sass/custom.scss */
   #header .search {
-    display: none;
+    border: 1px solid #dadada;
+    margin-left: 0;
+    margin-top: 0;
   }
 }
-/* line 1732, ../sass/custom.scss */
+/* line 1734, ../sass/custom.scss */
 #header .search input.search-form {
   margin-left: 0;
   padding: 5px 15px;
-  display: none;
-  display: none;
 }
 /* line 1738, ../sass/custom.scss */
 #header .search i {
