@@ -24,11 +24,9 @@ jQuery(function($) {'use strict',
     if ($(window).width() > 768) {
         if ($(window).scrollTop() > 100) {
           $('#header').addClass('navbar-fixed-top  wow fadeInDown');
-          console.log("Header sticked");
         }
         if ($(window).scrollTop() < 100) {
           $('#header').removeClass('navbar-fixed-top  wow fadeInDown');
-          console.log("Header unsticked");
         }
     };
   });
