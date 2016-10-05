@@ -66,7 +66,13 @@ Excibition page*/
   .center {
     padding-bottom: 20px;
   }
-}
+  .col-md-8, .col-md-4 {
+    @include breakpoint(mobile) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+ }
 .exibition_slider, .exibition_pager {
   background: #eceff7;
   padding: 20px;
@@ -90,7 +96,6 @@ Excibition page*/
   .excibition_thumb {
     cursor: pointer;
     &.audio, &.video, &.pdf, &.img {
-      margin-left: 10px;
       position: relative;
       box-shadow: 1px 1px 3px #999;
       img {
@@ -1481,7 +1486,6 @@ quotes by sardar homepag eblock*/
     margin-right: 15px;
   }
   i.fa-search {
-    border: 1px solid red;
     display: none;
   }
   input[type="text"] {
