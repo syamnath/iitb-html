@@ -61,13 +61,48 @@ Customization styles for the missing pages in the html*/
 
 /******************************************************
 Excibition page*/
-.exibition_slider {
-  margin-bottom: 20px;
+#exibition_details {
+  padding: 30px 0;
+  .center {
+    padding-bottom: 20px;
+  }
+}
+.exibition_slider, .exibition_pager {
+  background: #eceff7;
+  padding: 20px;
+  .deails_holder {
+    padding: 10px;
+    background: #fff;
+    border-radius: 3px;
+  }
+}
+.slick-next {
+  background-color: #e67e22 !important;
+  right: 20px !important;
+}
+.slick-prev {
+  background-color: #e67e22 !important;
+  left: 20px !important;
 }
 .exibition_pager {
   .excibition_thumb {
     cursor: pointer;
-    
+    &.audio, &.video, &.pdf, &.img {
+    position: relative;
+      i {
+        top: 45%;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 900;
+        color: #fff;
+        font-size: 25px;
+        display: inline-block;
+        position: absolute;
+        width: 25px;
+    }
+    }
   }
 }
 #excibitionVideo {
@@ -77,7 +112,7 @@ Excibition page*/
 
 .pdf-holder-ex {
   object {
-    height: 369px;
+  height: 369px;
   width: 100%;
   }
 }
@@ -1688,7 +1723,7 @@ Mobile styles for the header slider*/
 /******************************************************
 styles for the header*/
 #header {
-  position: absolute;
+  /* position: absolute; */
   right: 0;
   top: 0;
   left: 0;
